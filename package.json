@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/suaarezvalen/PokeAPI#readme",
   "dependencies": {
+    "axios": "^0.26.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "nodemon": "^2.0.15"
