@@ -1,0 +1,20 @@
+header{
+    background-color: white;
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-pokemon{
+    padding: 20px;
+}
+
+#img-rickandmorty{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}

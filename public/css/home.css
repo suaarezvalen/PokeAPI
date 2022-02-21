@@ -1,0 +1,15 @@
+body{
+    background-color: yellow;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo{
+    padding-top: 30px;
+    font-size: 35px;
+    font-family: "Evogria";
+}
