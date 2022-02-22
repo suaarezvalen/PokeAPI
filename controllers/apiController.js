@@ -1,17 +1,21 @@
 const axios = require('axios');
+const { render } = require('express/lib/response');
+const res = require('express/lib/response');
 
 const apiController = {
     
-    pokemon: (req, res) => {
+    pokeapi: (req, res) => {
 
-      axios.get(" https://pokeapi.co/api/v2/pokemon/ditto")
+      /*axios.get(" https://pokeapi.co/api/v2/pokemon")
       .then((datos) => {
-        const name = datos.data.name;
-        res.send(name);
+        let name = datos.data;
+        res.send(name); 
       })
       .catch((e) => {
         console.log(e)
-      })
+      })*/
+
+      res.render("pokeapi")
 
     },
 
@@ -19,7 +23,7 @@ const apiController = {
 
       axios.get("https://rickandmortyapi.com/api/character/80")
       .then((datos) => {
-        const name = datos.data.name;
+        let name = datos.data.name;
         res.send(name);
       })
       .catch((e) => {
